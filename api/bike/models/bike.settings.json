@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bikes",
+  "info": {
+    "name": "Bike",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "productionStart": {
+      "type": "date"
+    },
+    "productionEnd": {
+      "type": "date"
+    },
+    "bikeType": {
+      "type": "enumeration",
+      "enum": [
+        "E_CITY_BIKE",
+        "E_MOUNTAIN_BIKE",
+        "E_CARGO_BIKE",
+        "CITY_BIKE",
+        "MOUNTAIN_BIKE",
+        "CARGO_BIKE",
+        "STREET_BIKE",
+        "BMX"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "electric": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "smart": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "maxGears": {
+      "type": "integer",
+      "required": true
+    },
+    "breakType": {
+      "type": "enumeration",
+      "enum": [
+        "HYDRAULIC_DISC",
+        "COASTER"
+      ]
+    },
+    "break": {
+      "type": "string"
+    },
+    "motor": {
+      "type": "string"
+    },
+    "battery": {
+      "type": "string"
+    },
+    "gear": {
+      "type": "string"
+    },
+    "tire": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "range": {
+      "type": "integer"
+    },
+    "bike_brand": {
+      "model": "bike-brand"
+    },
+    "editors": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

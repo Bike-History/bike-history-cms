@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bike_brands",
+  "info": {
+    "name": "BikeBrand",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 30
+    },
+    "description": {
+      "type": "text"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "origin": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

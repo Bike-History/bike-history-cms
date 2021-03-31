@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bike-brands",
+      "handler": "bike-brand.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bike-brands/count",
+      "handler": "bike-brand.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bike-brands/:id",
+      "handler": "bike-brand.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bike-brands",
+      "handler": "bike-brand.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bike-brands/:id",
+      "handler": "bike-brand.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bike-brands/:id",
+      "handler": "bike-brand.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
