@@ -1,0 +1,26 @@
+name: Build and deploy bike-history api
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install ssh key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+      - name: Pushing to remote repository
+        run: |
+          git remote add production ${{ secrets.REMOTE_PATH }}
+          git checkout main
+          git fetch --unshallow
+          git push -u production main --force
