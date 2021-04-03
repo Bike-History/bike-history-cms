@@ -97,10 +97,6 @@
     },
     "bike_brand": {
       "model": "bike-brand"
-    },
-    "editors": {
-      "plugin": "users-permissions",
-      "collection": "user"
     }
   }
 }
