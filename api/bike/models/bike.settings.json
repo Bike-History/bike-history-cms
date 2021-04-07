@@ -97,6 +97,9 @@
     },
     "bike_brand": {
       "model": "bike-brand"
+    },
+    "bike_property": {
+      "model": "bike-properties"
     }
   }
 }

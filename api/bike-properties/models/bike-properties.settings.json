@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bike_properties",
+  "info": {
+    "name": "BikeProperties"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "range": {
+      "type": "integer"
+    },
+    "brakes": {
+      "type": "string"
+    },
+    "motor": {
+      "type": "string"
+    },
+    "battery": {
+      "type": "string"
+    },
+    "tires": {
+      "type": "string"
+    },
+    "production": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "bikeLength": {
+      "type": "decimal"
+    },
+    "bikeWidth": {
+      "type": "decimal"
+    },
+    "price": {
+      "type": "string"
+    },
+    "gear": {
+      "type": "string"
+    },
+    "chain": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bike-properties",
+      "handler": "bike-properties.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bike-properties/count",
+      "handler": "bike-properties.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bike-properties/:id",
+      "handler": "bike-properties.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bike-properties",
+      "handler": "bike-properties.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bike-properties/:id",
+      "handler": "bike-properties.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bike-properties/:id",
+      "handler": "bike-properties.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
