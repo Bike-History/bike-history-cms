@@ -644,30 +644,6 @@
               "COASTER"
             ]
           },
-          "break": {
-            "type": "string"
-          },
-          "motor": {
-            "type": "string"
-          },
-          "battery": {
-            "type": "string"
-          },
-          "gear": {
-            "type": "string"
-          },
-          "tire": {
-            "type": "string"
-          },
-          "price": {
-            "type": "string"
-          },
-          "weight": {
-            "type": "integer"
-          },
-          "range": {
-            "type": "integer"
-          },
           "bike_brand": {
             "required": [
               "id",
@@ -757,6 +733,54 @@
               "chain": {
                 "type": "string"
               },
+              "rear_brake": {
+                "type": "string"
+              },
+              "front_brake": {
+                "type": "string"
+              },
+              "rims": {
+                "type": "string"
+              },
+              "rear_deraillieor": {
+                "type": "string"
+              },
+              "front_feraillieur": {
+                "type": "string"
+              },
+              "crank": {
+                "type": "string"
+              },
+              "casette": {
+                "type": "string"
+              },
+              "brake_disc": {
+                "type": "string"
+              },
+              "stem": {
+                "type": "string"
+              },
+              "saddle": {
+                "type": "string"
+              },
+              "seatpost": {
+                "type": "string"
+              },
+              "pedals": {
+                "type": "string"
+              },
+              "fork": {
+                "type": "string"
+              },
+              "frame": {
+                "type": "string"
+              },
+              "bottom_bracket": {
+                "type": "string"
+              },
+              "handlebar": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -767,6 +791,9 @@
                 "type": "string"
               }
             }
+          },
+          "colors": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -830,34 +857,13 @@
               "COASTER"
             ]
           },
-          "break": {
-            "type": "string"
-          },
-          "motor": {
-            "type": "string"
-          },
-          "battery": {
-            "type": "string"
-          },
-          "gear": {
-            "type": "string"
-          },
-          "tire": {
-            "type": "string"
-          },
-          "price": {
-            "type": "string"
-          },
-          "weight": {
-            "type": "integer"
-          },
-          "range": {
-            "type": "integer"
-          },
           "bike_brand": {
             "type": "string"
           },
           "bike_property": {
+            "type": "string"
+          },
+          "colors": {
             "type": "string"
           },
           "published_at": {

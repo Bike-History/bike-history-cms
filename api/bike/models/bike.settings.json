@@ -71,35 +71,14 @@
         "COASTER"
       ]
     },
-    "break": {
-      "type": "string"
-    },
-    "motor": {
-      "type": "string"
-    },
-    "battery": {
-      "type": "string"
-    },
-    "gear": {
-      "type": "string"
-    },
-    "tire": {
-      "type": "string"
-    },
-    "price": {
-      "type": "string"
-    },
-    "weight": {
-      "type": "integer"
-    },
-    "range": {
-      "type": "integer"
-    },
     "bike_brand": {
       "model": "bike-brand"
     },
     "bike_property": {
       "model": "bike-properties"
+    },
+    "colors": {
+      "type": "string"
     }
   }
 }
