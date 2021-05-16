@@ -79,6 +79,9 @@
     },
     "colors": {
       "type": "string"
+    },
+    "creator": {
+      "type": "string"
     }
   }
 }

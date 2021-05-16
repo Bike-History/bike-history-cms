@@ -795,6 +795,9 @@
           "colors": {
             "type": "string"
           },
+          "creator": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -864,6 +867,9 @@
             "type": "string"
           },
           "colors": {
+            "type": "string"
+          },
+          "creator": {
             "type": "string"
           },
           "published_at": {
